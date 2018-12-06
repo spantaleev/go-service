@@ -37,7 +37,7 @@ func main() {
     sc := service.New()
 
     // Define service
-    sc.Set("my.service", func(c *service.Container) interface{} {
+    sc.Set("my.service", func(c service.Container) interface{} {
         return &MyService{}
     })
 
